@@ -13,7 +13,7 @@ export default function Footer() {
                 </div>
                 <div className="grid grid-flow-row justify-items-center md:justify-items-end">
                     <Link href='/'>Page 1</Link>
-                    <Link href='/page2'>Page 2</Link>
+                    <Link href='/news'>Page 2</Link>
                     <p className="text-center text-xs leading-5 text-gray-500">&copy; 2023 Daniel Collings. All rights reserved.</p>
                 </div>
             </div>

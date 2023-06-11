@@ -1,8 +1,9 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
   ],
-  "plugins": ["jsx-a11y"]
+  "plugins": ["jsx-a11y", "@tanstack/query"]
 
 }

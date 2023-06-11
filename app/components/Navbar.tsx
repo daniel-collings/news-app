@@ -25,7 +25,7 @@ export default function Navbar() {
 
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8 sm:float-right">
               <span className={pathname === "/" ? highlightNavItem : standardNavItem}><Link href="/" className='text-gray-500'>Page 1</Link></span>
-              <span className={pathname.includes("/page2") ? highlightNavItem : standardNavItem}><Link href="/page2" className='text-gray-500'>Page 2</Link></span>
+              <span className={pathname.includes("/news") ? highlightNavItem : standardNavItem}><Link href="/news" className='text-gray-500'>Page 2</Link></span>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="space-y-1 pb-3 pt-2">
 
           <span className={pathname === "/" ? "block border-l-4 border-[#222ac5] bg-[#222ac527] py-2 pl-3 pr-4 text-base font-medium text-[#222ac5]" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"}><Link href="/" className='text-gray-500'>Page 1</Link></span>
-          <span className={pathname.includes("/page2") ? "block border-l-4 border-[#222ac5] bg-[#222ac527] py-2 pl-3 pr-4 text-base font-medium text-[#222ac5]" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"}><Link href="/showroom" className='text-gray-500'>Page 2</Link></span>
+          <span className={pathname.includes("/news") ? "block border-l-4 border-[#222ac5] bg-[#222ac527] py-2 pl-3 pr-4 text-base font-medium text-[#222ac5]" : "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"}><Link href="/showroom" className='text-gray-500'>Page 2</Link></span>
 
         </div>
       </div>

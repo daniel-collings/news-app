@@ -5,6 +5,7 @@
     {
       "id": "Example1",
       "title": "Example",
+      "date": "2023-06-05",
       "image": { "src": "/next.svg", "alt": "Next logo" },
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temponsectetur adipiscing elit, sed do eiusmod temponsectetur adipiscing elit, sed do eiusmod temponsectetur adipiscing elit, sed do eiusmod temponsectetur adipiscing elit, sed do eiusmod temponsectetur adipiscing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua.",
       "href": "https://cardanofoundation.org/"
@@ -12,6 +13,7 @@
     {
       "id": "Example2",
       "title": "Example 2",
+      "date": "2023-06-04",
       "image": { "src": "/next.svg", "alt": "Next logo" },
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua.",
       "href": "https://cardanofoundation.org/"
@@ -19,6 +21,7 @@
     {
       "id": "Example3",
       "title": "Example 3",
+      "date": "2023-06-03",
       "image": { "src": "/next.svg", "alt": "Next logo" },
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua.",
       "href": "https://cardanofoundation.org/"
@@ -26,6 +29,7 @@
     {
       "id": "Example4",
       "title": "Example 4",
+      "date": "2023-06-02",
       "image": { "src": "/next.svg", "alt": "Next logo" },
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua.",
       "href": "https://cardanofoundation.org/"
@@ -33,6 +37,7 @@
     {
       "id": "Example5",
       "title": "Example 5",
+      "date": "2023-06-06",
       "image": { "src": "/next.svg", "alt": "Next logo" },
       "blurb": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incunt ut labore et dolore magna aliqua.",
       "href": "https://cardanofoundation.org/"

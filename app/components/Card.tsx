@@ -14,7 +14,7 @@ export default function Card({ props }: { props: ICardProps }) {
     return (
         <div className="basis-full md:basis-1/3 grow group w-full h-max">
             <div className="flex justify-around items-center md:h-36 border-gray-400 border-2 bg-gray-300 rounded-md md:group-hover:hidden h-fit">
-                <img src={props.image.src} width={250} height={250} alt={props.image.alt} className="object-contain md:hidden" />
+                {props.image && <img src={props.image.src} width={250} height={250} alt={props.image.alt} className="object-contain md:hidden" />}
                 <h2 className="hidden md:flex group-hover:hidden">{props.title}</h2>
             </div>
             <div className="md:border-gray-400 md:border-0 md:group-hover:border-2 md:group-hover:h-36 md:bg-gray-300 rounded-md overflow-hidden">
