@@ -4,6 +4,7 @@ import newsData from '@/public/newsData.json'
 const DATA_SOURCE_URL = "https://api.newscatcherapi.com/v2/search"
 // https://api.newscatcherapi.com/v2/
 const API_KEY: string = process.env.NEWSCATCHER_API_KEY as string
+const ORIGIN_ENV: string = process.env.ORIGIN_ENV as string
 
 export async function GET(req: NextRequest) {
     const page = req.nextUrl.searchParams.get('page');
@@ -13,7 +14,7 @@ export async function GET(req: NextRequest) {
             headers: {
                 'Content-Type': 'application/json',
                 'x-api-key': API_KEY,
-                "Access-Control-Allow-Origin": 'http://localhost:3000',
+                "Access-Control-Allow-Origin": ORIGIN_ENV,
                 "Access-Control-Allow-Methods": "GET"
             },
         })

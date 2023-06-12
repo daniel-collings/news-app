@@ -7,7 +7,7 @@ const nextConfig = {
         return [
           {
             source: '/api/:path*/',
-            destination: 'https://v3-api.newscatcherapi.com/api/:path*/', // Matched parameters can be used in the destination
+            destination: 'https://api.newscatcherapi.com/v2/:path*/', // Matched parameters can be used in the destination
           },
         ]
       }
