@@ -44,12 +44,12 @@ const fetchData = async (page: number) => {
 export default function NewsPage() {
     const [page, setPage] = useState(1)
 
-    const { data, isLoading, isPreviousData } = useQuery({ 
+    const { data, isLoading } = useQuery({ 
         queryKey: ['news', page], 
         queryFn: () => fetchData(page),
-        staleTime: 1200000,
-        cacheTime: 1200000,
-        keepPreviousData : true,
+        // staleTime: 1200000,
+        // cacheTime: 1200000,
+        // keepPreviousData : true,
     })
 
     const [searchText, setSearchText] = useState('');
@@ -79,12 +79,12 @@ export default function NewsPage() {
                     type="text"
                     className="w-full col-span-4 md:col-span-3 rounded-md mr-8 border-4 border-blue-300 px-4 py-2 mb-2 md:mb-0"
                     placeholder="Search by title..."
-                    onChange={() => handleSearchChange}
+                    onChange={handleSearchChange}
                 />
                 <input
                     type="date"
                     className="w-full col-span-4 md:col-span-1 border-4 rounded-md border-blue-300 px-4 py-2"
-                    onChange={() => handleDateChange}
+                    onChange={handleDateChange}
                 />
 
             </div>
