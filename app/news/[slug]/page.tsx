@@ -9,6 +9,7 @@ const fetchArticleData = async (id: string) => {
 
 export default function NewsArticle({ params }: any) {
   const { data, isLoading } = useQuery({
+    queryKey: ['news', params.slug],
     queryFn: () => fetchArticleData(params.slug),
     retry: 3
   })

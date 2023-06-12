@@ -73,7 +73,7 @@ export default function NewsPage() {
 
 
     return (
-        <div className="grid min-h-screen flex-col justify-evenly md:p-20 p-4 mt-12">
+        <div className="grid min-h-screen flex-col justify-evenly mt-12">
             <div className="grid grid-cols-4">
                 <input
                     type="text"
