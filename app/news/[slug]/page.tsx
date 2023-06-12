@@ -1,5 +1,6 @@
 'use client'
 
+import Article from "@/app/components/Article"
 import { useQuery } from "@tanstack/react-query"
 
 const fetchArticleData = async (id: string) => {
@@ -17,10 +18,7 @@ export default function NewsArticle({ params }: any) {
   if (isLoading) return <>Loading article...</>
 
   return (
-    <article className="container min-h-screen mx-auto px-8 py-8 sm:px-6 lg:px-8">
-      <h1 className="py-4">{data.articles[0].title}</h1>
-      <p>{data.articles[0].summary}</p>
-    </article>
+      <Article props={data.articles[0]}/>
   )
 }
 
