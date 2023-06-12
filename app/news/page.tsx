@@ -35,9 +35,10 @@ export interface INewsArticleData{
     _score: number,
     _id: string
 }
+const ORIGIN_ENV: string = process.env.ORIGIN_ENV as string
 
 const fetchData = async (page: number) => {
-    const res = await fetch(`http://localhost:3000/api/news?page=${page}`).then(res => res.json())
+    const res = await fetch(`${ORIGIN_ENV}/api/news?page=${page}`).then(res => res.json())
     return res
 }
 

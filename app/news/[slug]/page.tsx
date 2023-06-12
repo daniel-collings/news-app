@@ -3,8 +3,10 @@
 import Article from "@/app/components/Article"
 import { useQuery } from "@tanstack/react-query"
 
+const ORIGIN_ENV: string = process.env.ORIGIN_ENV as string
+
 const fetchArticleData = async (id: string) => {
-  const res = await fetch(`http://localhost:3000/api/article?id=${id}`).then(res => res.json())
+  const res = await fetch(`${ORIGIN_ENV}/api/article?id=${id}`).then(res => res.json())
   return res
 }
 
