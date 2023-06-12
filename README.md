@@ -29,3 +29,4 @@ In addition there are supporting dependencies to encourage best practice for dev
 - TODO: The news article slug could be slugified to use is title for further development.
 - TODO: Debounce search to reduce re-renders.
 - TODO: Testing is not covered in this app development at this stage. I will reach for RTL with Vitest to test the component behaviours. For integration testing I would use Cypress.
+- TODO: Optimise for SEO.
