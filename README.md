@@ -23,8 +23,9 @@ In addition there are supporting dependencies to encourage best practice for dev
 ### Project URL
 - [News App](https://cf-news-app.netlify.app/)
 ## Notes
-- The app calls a third party API to collect external news data source. I have used Newscatcher as NEWS API was down with an internal server error.
+- The app calls a third party API to collect external news data source. I have used [Newscatcher](https://newscatcherapi.com/) as [News API](https://newsapi.org/) was down with an internal server error.
   - Limitation, newscatcher only allows upto 50 API calls per month. I have developed a local development work around which involves returning a local json file.
-- Testing is not covered in this app development at this stage. I will reach for RTL with Vitest to test the component behaviours. For integration testing I would use Cypress.
 - Styling has been intentionally left basic and this repo is more about the functionality and responsiveness (UX) than the UI style.
-- The news article slug could be slugified to use is title for further development.
+- TODO: The news article slug could be slugified to use is title for further development.
+- TODO: Debounce search to reduce re-renders.
+- TODO: Testing is not covered in this app development at this stage. I will reach for RTL with Vitest to test the component behaviours. For integration testing I would use Cypress.
